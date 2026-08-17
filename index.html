@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MelBet | Code Promo HAALAND66</title>
+
+<meta name="description"
+content="Guide d'inscription MelBet avec le code promo HAALAND66. Découvrez comment créer votre compte étape par étape.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg:#050b14;
+    --bg2:#091524;
+    --card:#0d1b2b;
+    --green:#20e39b;
+    --green-dark:#123d31;
+    --text:#f7fbff;
+    --muted:#9eafc2;
+    --border:#1c3047;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:min(1120px,92%);
+    margin:auto;
+}
+
+/* NAVIGATION */
+
+nav{
+    height:75px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid var(--border);
+}
+
+.logo{
+    font-size:25px;
+    font-weight:900;
+}
+
+.logo span{
+    color:var(--green);
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+}
+
+.menu a{
+    color:#d8e4ef;
+    font-weight:600;
+}
+
+.menu a:hover{
+    color:var(--green);
+}
+
+/* HERO */
+
+.hero{
+    padding:90px 0;
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:60px;
+    align-items:center;
+}
+
+.badge{
+    display:inline-block;
+    background:var(--green-dark);
+    color:var(--green);
+    padding:7px 13px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:clamp(45px,6vw,72px);
+    line-height:1;
+    margin-bottom:25px;
+}
+
+h1 span{
+    color:var(--green);
+}
+
+.hero-text{
+    color:var(--muted);
+    font-size:18px;
+    max-width:650px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 24px;
+    border-radius:11px;
+    font-weight:800;
+    transition:.2s;
+}
+
+.btn-primary{
+    background:var(--green);
+    color:#03140e;
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+    background:var(--card);
+    border:1px solid var(--border);
+}
+
+/* CODE CARD */
+
+.code-card{
+    background:linear-gradient(145deg,#10243a,#081321);
+    border:1px solid var(--border);
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 30px 80px rgba(0,0,0,.4);
+}
+
+.code-label{
+    color:var(--green);
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+.code{
+    margin:25px 0;
+    padding:25px;
+    text-align:center;
+    background:#050d17;
+    border:1px dashed #35536f;
+    border-radius:15px;
+    font-size:36px;
+    font-weight:900;
+    letter-spacing:4px;
+}
+
+.copy{
+    width:100%;
+    border:none;
+    cursor:pointer;
+    font-size:15px;
+}
+
+#message{
+    text-align:center;
+    color:var(--green);
+    min-height:25px;
+    margin-top:10px;
+}
+
+/* SECTIONS */
+
+section{
+    padding:75px 0;
+}
+
+.section-title{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.section-subtitle{
+    color:var(--muted);
+    margin-bottom:35px;
+}
+
+/* STEPS */
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.step{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:30px;
+}
+
+.number{
+    width:45px;
+    height:45px;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    background:var(--green-dark);
+    color:var(--green);
+    font-weight:900;
+    margin-bottom:20px;
+}
+
+.step h3{
+    margin-bottom:10px;
+    font-size:21px;
+}
+
+.step p{
+    color:var(--muted);
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.feature{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:28px;
+}
+
+.feature-icon{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.feature h3{
+    margin-bottom:8px;
+}
+
+.feature p{
+    color:var(--muted);
+}
+
+/* FAQ */
+
+.faq{
+    max-width:850px;
+}
+
+details{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:12px;
+    margin-bottom:12px;
+    padding:18px 20px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:800;
+}
+
+details p{
+    color:var(--muted);
+    margin-top:12px;
+}
+
+/* CTA */
+
+.cta{
+    background:linear-gradient(135deg,#0c2d27,#0b2033);
+    border:1px solid var(--border);
+    border-radius:25px;
+    padding:55px 30px;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    color:var(--muted);
+    max-width:650px;
+    margin:0 auto 25px;
+}
+
+/* WARNING */
+
+.warning{
+    margin:0 auto 50px;
+    background:#211d12;
+    border:1px solid #5b4c27;
+    border-radius:14px;
+    padding:18px;
+    color:#d7cba8;
+    font-size:13px;
+}
+
+/* FOOTER */
+
+footer{
+    border-top:1px solid var(--border);
+    padding:35px 0;
+    text-align:center;
+    color:#8192a6;
+    font-size:13px;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    .menu{
+        display:none;
+    }
+
+    .hero{
+        grid-template-columns:1fr;
+        padding:55px 0;
+    }
+
+    .steps,
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    h1{
+        font-size:48px;
+    }
+
+    .code{
+        font-size:29px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+HAALAND<span>66</span>
+</div>
+
+<div class="menu">
+<a href="#guide">Guide</a>
+<a href="#code">Code promo</a>
+<a href="#faq">FAQ</a>
+</div>
+
+</nav>
+
+</div>
+
+
+<!-- HERO -->
+
+<header class="container hero">
+
+<div>
+
+<div class="badge">
+GUIDE MELBET
+</div>
+
+<h1>
+Code promo
+<br>
+<span>HAALAND66</span>
+</h1>
+
+<p class="hero-text">
+Découvrez comment utiliser le code promo HAALAND66
+lors de votre inscription sur MelBet.
+Suivez simplement les étapes ci-dessous.
+</p>
+
+<div class="buttons">
+
+<a
+href="https://refpa3665.com/L?tag=d_5973733m_45415c_&site=5973733&ad=45415"
+target="_blank"
+rel="nofollow sponsored noopener"
+class="btn btn-primary">
+
+S'inscrire maintenant
+
+</a>
+
+<a
+href="#guide"
+class="btn btn-secondary">
+
+Voir le guide
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- CODE -->
+
+<div class="code-card" id="code">
+
+<div class="code-label">
+CODE PROMO
+</div>
+
+<div class="code" id="promoCode">
+HAALAND66
+</div>
+
+<button
+class="btn btn-primary copy"
+onclick="copyCode()">
+
+Copier le code
+
+</button>
+
+<div id="message"></div>
+
+</div>
+
+</header>
+
+
+<!-- GUIDE -->
+
+<section id="guide">
+
+<div class="container">
+
+<h2 class="section-title">
+Comment s'inscrire ?
+</h2>
+
+<p class="section-subtitle">
+Trois étapes simples pour commencer.
+</p>
+
+
+<div class="steps">
+
+
+<div class="step">
+
+<div class="number">
+1
+</div>
+
+<h3>
+Ouvrir MelBet
+</h3>
+
+<p>
+Cliquez sur le bouton d'inscription
+et ouvrez la page officielle de MelBet.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="number">
+2
+</div>
+
+<h3>
+Créer votre compte
+</h3>
+
+<p>
+Choisissez la méthode d'inscription disponible
+et renseignez les informations demandées.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="number">
+3
+</div>
+
+<h3>
+Entrer HAALAND66
+</h3>
+
+<p>
+Lorsque le champ code promo apparaît,
+entrez <strong>HAALAND66</strong>
+avant de terminer l'inscription.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Pourquoi utiliser ce guide ?
+</h2>
+
+<p class="section-subtitle">
+Toutes les informations essentielles au même endroit.
+</p>
+
+
+<div class="features">
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🎁
+</div>
+
+<h3>
+Code promo
+</h3>
+
+<p>
+Le code HAALAND66 est affiché clairement
+et peut être copié en un clic.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+📱
+</div>
+
+<h3>
+Compatible mobile
+</h3>
+
+<p>
+Le site est entièrement responsive
+pour téléphone, tablette et ordinateur.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+⚡
+</div>
+
+<h3>
+Guide rapide
+</h3>
+
+<p>
+Les principales étapes d'inscription
+sont expliquées simplement.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+<h2>
+Prêt à commencer ?
+</h2>
+
+<p>
+Utilisez le code promo HAALAND66
+lorsque le champ code promo est disponible
+pendant votre inscription.
+</p>
+
+<a
+href="https://refpa3665.com/L?tag=d_5973733m_45415c_&site=5973733&ad=45415"
+target="_blank"
+rel="nofollow sponsored noopener"
+class="btn btn-primary">
+
+S'inscrire sur MelBet
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section id="faq">
+
+<div class="container">
+
+<h2 class="section-title">
+Questions fréquentes
+</h2>
+
+
+<div class="faq">
+
+
+<details>
+
+<summary>
+Où entrer le code HAALAND66 ?
+</summary>
+
+<p>
+Lors de l'inscription, recherchez le champ
+« Code promo » ou « Promo code » et saisissez
+HAALAND66 lorsqu'il est disponible.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Le code fonctionne-t-il dans tous les pays ?
+</summary>
+
+<p>
+Les offres et conditions peuvent varier selon
+le pays. Vérifiez les conditions affichées
+pendant votre inscription.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Puis-je utiliser le code après mon inscription ?
+</summary>
+
+<p>
+Cela dépend des conditions de l'offre.
+Lorsque le champ est disponible, il est préférable
+d'entrer le code pendant l'inscription.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Les gains sont-ils garantis ?
+</summary>
+
+<p>
+Non. Les paris sportifs comportent un risque
+de perte financière et aucun gain n'est garanti.
+</p>
+
+</details>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WARNING -->
+
+<div class="container">
+
+<div class="warning">
+
+<strong>18+ uniquement.</strong>
+
+Les jeux d'argent comportent des risques financiers.
+Jouez uniquement si cela est légal dans votre pays.
+Ne misez jamais de l'argent destiné à vos dépenses essentielles.
+
+</div>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+Site indépendant consacré à l'information
+sur l'inscription et les codes promotionnels.
+
+<br><br>
+
+MelBet et les marques associées appartiennent
+à leurs propriétaires respectifs.
+
+<br><br>
+
+© 2026 HAALAND66
+
+</div>
+
+</footer>
+
+
+<script>
+
+function copyCode(){
+
+const code = "HAALAND66";
+
+navigator.clipboard.writeText(code)
+
+.then(function(){
+
+document.getElementById("message").innerText =
+"✓ Code copié !";
+
+})
+
+.catch(function(){
+
+document.getElementById("message").innerText =
+"Copiez manuellement : HAALAND66";
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
